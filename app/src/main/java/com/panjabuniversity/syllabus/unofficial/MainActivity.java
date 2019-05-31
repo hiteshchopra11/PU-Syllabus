@@ -45,7 +45,7 @@ public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        isStoragePermissionGranted();
+
         registerReceiver(onComplete, new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE));
         if (haveNetworkConnection()) {
             new Spinner2().execute();
@@ -72,6 +72,7 @@ public class MainActivity extends Activity {
     }
 
     // Logo AsyncTask
+    @SuppressLint("StaticFieldLeak")
     private class Spinner1 extends AsyncTask<String, String, String> {
         String std;
         ProgressDialog progress = new ProgressDialog(MainActivity.this);
@@ -94,11 +95,9 @@ public class MainActivity extends Activity {
         protected String doInBackground(String... params) {
             try {
 
-                // Connect to the web site
 
                 String url1 = params[0];
                 Document document = Jsoup.connect(url1).get();
-                // Using Elements to get the Meta data
 
 
                 Elements ul = document
@@ -156,14 +155,12 @@ public class MainActivity extends Activity {
                 public void onItemSelected(AdapterView<?> parent, View view,
                                            final int position, long id) {
                     FrameLayout btn = findViewById(R.id.button);
-
+                    isStoragePermissionGranted();
 
                     btn.setOnClickListener(v -> {
 
 
-                        MainActivity.this.runOnUiThread(() -> {
-                            progressBar.setVisibility(View.VISIBLE);
-                        });
+                        MainActivity.this.runOnUiThread(() -> progressBar.setVisibility(View.VISIBLE));
 
 
                         if (isFileExists("syllabus.pdf")) {
@@ -186,7 +183,6 @@ public class MainActivity extends Activity {
 
                 @Override
                 public void onNothingSelected(AdapterView<?> parent) {
-                    Toast.makeText(MainActivity.this, "Hello World", Toast.LENGTH_SHORT).show();
                 }
             });
         }
