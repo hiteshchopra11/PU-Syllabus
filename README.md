@@ -8,10 +8,10 @@ https://play.google.com/store/apps/details?id=com.pusyllabus.unofficial&hl=en_IN
 
 ## Screenshots added-:
 ### Screenshot 1-:
-![](media./s1.jpg)
+![](media ./s1.png)
 
 ### Screenshot 2-:
-![](media./s2.jpg)
+![](media. /s2.png)
 
 ### Screenshot 3-:
 ![](media./s3.jpg)
