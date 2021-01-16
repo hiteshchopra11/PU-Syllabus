@@ -8,25 +8,25 @@ https://play.google.com/store/apps/details?id=com.pusyllabus.unofficial&hl=en_IN
 
 ## Screenshots added-:
 ### Screenshot 1-:
-![](media./s1.png)
+![](media./s1.jpg)
 
 ### Screenshot 2-:
-![](media./s2.png)
+![](media./s2.jpg)
 
 ### Screenshot 3-:
-![](media./s3.png)
+![](media./s3.jpg)
 
 ### Screenshot 4-:
-![](media./s4.png)
+![](media./s4.jpg)
 
 ### Screenshot 5-:
-![](media./s5.png)
+![](media./s5.jpg)
 
 ### Screenshot 6-:
-![](media./s6.png)
+![](media./s6.jpg)
 
 ### Screenshot 7-:
-![](media./s7.png)
+![](media./s7.jpg)
 
 ### Screenshot 8-:
-![](media./s8.png)
+![](media./s8.jpg)
